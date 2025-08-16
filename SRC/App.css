@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- Header Container --- */
+/* --- Header Container --- */
+#header-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* --- Greeting Text --- */
+#greeting {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* --- Navbar Container --- */
+#main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* --- Navbar Brand --- */
+#navbar-brand {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* --- Navbar Toggle Button --- */
+#navbar-toggle {
+  display: none; /* hidden on desktop */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* --- Navbar Content (Aligned Left) --- */
+#navbar-content {
+  display: flex;
+  align-items: center;
+  margin-left: 0;       /* force left alignment */
+  padding-left: 0;
+  gap: 2rem;            /* space between nav and form */
+}
+
+/* --- Nav Links List --- */
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Nav Items --- */
+#nav-links li a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 0.75rem;
+}
+
+#nav-links li a:hover {
+  background-color: #e2e6ea;
+  border-radius: 4px;
+}
+
+/* --- Dropdown Menu --- */
+#dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  z-index: 1001;
+}
+
+#dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+#dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* --- Show Dropdown on Hover --- */
+#nav-dropdown {
+  position: relative;
+}
+
+#nav-dropdown:hover #dropdown-menu {
+  display: block;
+}
+
+/* --- Search Form --- */
+#search-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#search-input {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-button {
+  padding: 0.4rem 0.75rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #218838;
+}
+
+/* --- Disabled Link Styling --- */
+#nav-disabled a {
+  color: #aaa;
+  pointer-events: none;
+}
